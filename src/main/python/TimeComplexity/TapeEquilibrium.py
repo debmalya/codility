@@ -10,11 +10,11 @@ def solution(A):
 
     for i in range(length):
         s[i]+=A[i]
-        print(length - i - 1)
+        
         rs[length-i-1]+=A[length-i-1]
         if i > 0:
             s[i]+=s[i-1]
-            print(length-i)
+            
             rs[length-i-1]+=rs[length-i]
 
     min=1000000
