@@ -12,5 +12,6 @@ public class DemoTest {
         assertEquals(1, demo.solution(new int[]{-1, -3}));
         assertEquals(4, demo.solution(new int[]{1, 2, 3}));
         assertEquals(5, demo.solution(new int[]{1, 3, 6, 4, 1, 2}));
+        assertEquals(2, demo.solution(new int[]{1}));
     }
 }
