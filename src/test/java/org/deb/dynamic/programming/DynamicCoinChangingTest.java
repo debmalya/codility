@@ -1,11 +1,8 @@
 package org.deb.dynamic.programming;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-import org.junit.Assert;
-import org.junit.Test;
-
-
+import org.junit.jupiter.api.Test;
 
 public class DynamicCoinChangingTest {
 
@@ -13,11 +10,11 @@ public class DynamicCoinChangingTest {
 
 	@Test
 	public void testChangeCoins() {
-		Assert.assertEquals(2, dc.changeCoins(new int[] { 1, 3, 4 }, 6));
-		Assert.assertEquals(2, dc.changeCoins(new int[] { 1, 3, 4 }, 7));
-		Assert.assertEquals(3, dc.changeCoins(new int[] { 1, 2, 4 }, 7));
-		Assert.assertEquals(2, dc.changeCoins(new int[] { 1, 2, 4 }, 8));
-		Assert.assertEquals(3, dc.changeCoins(new int[] { 1, 2, 4 }, 9));
+		assertEquals(2, dc.changeCoins(new int[] { 1, 3, 4 }, 6));
+		assertEquals(2, dc.changeCoins(new int[] { 1, 3, 4 }, 7));
+		assertEquals(3, dc.changeCoins(new int[] { 1, 2, 4 }, 7));
+		assertEquals(2, dc.changeCoins(new int[] { 1, 2, 4 }, 8));
+		assertEquals(3, dc.changeCoins(new int[] { 1, 2, 4 }, 9));
 	}
 
 }
