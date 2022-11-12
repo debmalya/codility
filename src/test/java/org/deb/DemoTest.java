@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 public class DemoTest {
 
     @Test
-    public void solution() {
+    void solution() {
         Demo demo = new Demo();
         assertEquals(1, demo.solution(new int[]{-1, -3}));
         assertEquals(4, demo.solution(new int[]{1, 2, 3}));
